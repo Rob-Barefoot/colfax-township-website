@@ -1,0 +1,8 @@
+# Git Upload Commands for Rob-Barefoot/colfax-township-website
+
+git init
+git add .
+git commit -m "Initial upload of Colfax Township website"
+git branch -M main
+git remote add origin https://github.com/Rob-Barefoot/colfax-township-website.git
+git push -u origin main

@@ -1,0 +1,10 @@
+# Placeholder for Noise Ordinance PDF
+
+This is a placeholder file for the Noise Ordinance document.
+In a real implementation, you would replace this with the actual PDF document from:
+https://www.colfaxtownshipoceana.org/_files/ugd/213af5_78710837137140319c5811e1bb1a71a6.pdf
+
+To add the actual document:
+1. Download the PDF from the original website
+2. Replace this file with the downloaded PDF
+3. Rename it to "noise-ordinance.pdf"
