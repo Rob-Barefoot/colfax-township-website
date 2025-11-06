@@ -1152,6 +1152,10 @@ select.error {
     background-color: #dc3545;
 }
 
+.event-indicator.holiday {
+    background-color: #fd7e14;
+}
+
 /* Event Details Section */
 .event-details-section {
     padding: 2rem 0;
@@ -1190,6 +1194,11 @@ select.error {
 .event-detail.deadline {
     border-left-color: #dc3545;
     background-color: #fff5f5;
+}
+
+.event-detail.holiday {
+    border-left-color: #fd7e14;
+    background-color: #fff8f0;
 }
 
 .event-detail h4 {
@@ -1268,6 +1277,10 @@ select.error {
 
 .legend-color.deadline {
     background-color: #dc3545;
+}
+
+.legend-color.holiday {
+    background-color: #fd7e14;
 }
 
 /* Mobile Responsiveness for Calendar */

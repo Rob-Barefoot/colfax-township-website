@@ -47,6 +47,79 @@ class TownshipCalendar {
                 location: 'Colfax Township Hall, 5594 N 192nd Ave, Walkerville MI',
                 link: 'meetings.html'
             },
+            // Community Events and Holidays
+            {
+                date: '2025-11-11',
+                title: 'Veterans Day',
+                time: 'All Day',
+                type: 'holiday',
+                description: 'Honor and remember our veterans who served our country.',
+                location: 'Community-wide observance',
+                link: null
+            },
+            {
+                date: '2025-11-15',
+                title: 'Opening Day of Rifle Season',
+                time: 'All Day',
+                type: 'community',
+                description: 'Hunt Safe! Opening day of rifle hunting season.',
+                location: 'Michigan hunting areas',
+                link: null
+            },
+            {
+                date: '2025-11-27',
+                title: 'Thanksgiving Day',
+                time: 'All Day',
+                type: 'holiday',
+                description: 'Happy Thanksgiving! Give thanks and enjoy time with family.',
+                location: 'Community celebration',
+                link: null
+            },
+            {
+                date: '2025-11-30',
+                title: 'Board Position Application Deadline',
+                time: '11:59 PM Deadline',
+                type: 'deadline',
+                description: 'Last day to apply for Trustee and Deputy Clerk positions.',
+                location: 'Contact: Township Clerk',
+                link: 'mailto:jonimgerard80@yahoo.com'
+            },
+            {
+                date: '2025-12-14',
+                title: 'Hanukkah Begins',
+                time: 'Sundown',
+                type: 'holiday',
+                description: 'Hanukkah, the Festival of Lights, begins at sundown.',
+                location: 'Community observance',
+                link: null
+            },
+            {
+                date: '2025-12-25',
+                title: 'Christmas Day',
+                time: 'All Day',
+                type: 'holiday',
+                description: 'Merry Christmas! Celebrate with family and friends.',
+                location: 'Community celebration',
+                link: null
+            },
+            {
+                date: '2025-12-26',
+                title: 'Kwanzaa Begins',
+                time: 'All Day',
+                type: 'holiday',
+                description: 'Kwanzaa, celebrating African-American culture, begins.',
+                location: 'Community observance',
+                link: null
+            },
+            {
+                date: '2025-12-31',
+                title: "New Year's Eve",
+                time: 'All Day',
+                type: 'holiday',
+                description: 'Have a Safe New Year\'s Eve! Celebrate responsibly.',
+                location: 'Community celebration',
+                link: null
+            },
             {
                 date: '2026-03-04',
                 title: 'Township Board Meeting',
@@ -101,6 +174,8 @@ class TownshipCalendar {
 
         const firstDay = new Date(this.currentYear, this.currentMonth, 1).getDay();
         const daysInMonth = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
+        
+
 
         // Add empty cells for days before the first day of the month
         for (let i = 0; i < firstDay; i++) {
