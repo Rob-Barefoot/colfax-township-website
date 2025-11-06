@@ -21,7 +21,7 @@ class TownshipCalendar {
                 link: 'mailto:jonimgerard80@yahoo.com'
             },
             {
-                date: '2025-12-03', 
+                date: '2025-12-02', 
                 title: 'Township Board Meeting',
                 time: '7:00 PM',
                 type: 'government',
@@ -30,7 +30,7 @@ class TownshipCalendar {
                 link: 'meetings.html'
             },
             {
-                date: '2026-01-07',
+                date: '2026-01-06',
                 title: 'Township Board Meeting', 
                 time: '7:00 PM',
                 type: 'government',
@@ -118,6 +118,9 @@ class TownshipCalendar {
             const dateString = `${this.currentYear}-${String(this.currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
             const dayEvents = this.getEventsForDate(dateString);
 
+            // Store the date string as a data attribute for debugging
+            dayElement.setAttribute('data-date', dateString);
+
             if (dayEvents.length > 0) {
                 dayElement.classList.add('has-events');
                 
@@ -160,7 +163,10 @@ class TownshipCalendar {
 
     showEventDetails(events, dateString) {
         const detailsContainer = document.getElementById('selected-event-details');
-        const date = new Date(dateString);
+        // Parse date components to avoid timezone issues
+        const [year, month, day] = dateString.split('-').map(num => parseInt(num));
+        const date = new Date(year, month - 1, day); // month is 0-indexed in Date constructor
+        
         const formattedDate = date.toLocaleDateString('en-US', {
             weekday: 'long',
             year: 'numeric',
