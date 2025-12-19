@@ -209,6 +209,30 @@ nav a.active {
     text-decoration: underline;
 }
 
+/* Footer contact info overrides */
+footer .contact-info {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+footer .contact-info p {
+    color: white;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer .contact-info a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .member-bio h5 {
     color: #4a5d23;
     margin: 1rem 0 0.5rem 0;
@@ -530,6 +554,14 @@ main {
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 1rem;
+}
+
+/* Ensure footer contact details don't inherit light background */
+footer .contact-details {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
 }
 
 /* Footer */
