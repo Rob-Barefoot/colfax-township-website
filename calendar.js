@@ -125,10 +125,10 @@ class TownshipCalendar {
         
         const upcomingEvents = this.events
             .filter(event => {
-                const eventDate = new Date(event.date);
+                const eventDate = new Date(event.date + 'T00:00:00');
                 return eventDate >= today && eventDate <= futureDate;
             })
-            .sort((a, b) => new Date(a.date) - new Date(b.date));
+            .sort((a, b) => new Date(a.date + 'T00:00:00') - new Date(b.date + 'T00:00:00'));
         
         if (upcomingEvents.length === 0) {
             eventsList.innerHTML = '<p>No upcoming events scheduled.</p>';
@@ -139,7 +139,7 @@ class TownshipCalendar {
             const eventDiv = document.createElement('div');
             eventDiv.classList.add('event-item', event.type);
             
-            const eventDate = new Date(event.date);
+            const eventDate = new Date(event.date + 'T00:00:00');
             const formattedDate = eventDate.toLocaleDateString('en-US', {
                 weekday: 'long',
                 year: 'numeric',

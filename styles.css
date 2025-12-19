@@ -183,12 +183,16 @@ main {
 
 .event-date {
     background: #4a5d23;
-    color: white;
+    color: white !important;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
     min-width: 100px;
     height: fit-content;
+}
+
+.event-date * {
+    color: white !important;
 }
 
 .event-date .month {
@@ -546,7 +550,7 @@ li {
     justify-content: center;
     gap: 2rem;
     font-size: 0.9rem;
-    color: #666;
+    color: #333;
 }
 
 .legend-item {
@@ -579,7 +583,7 @@ li {
 
 .event-item .event-date {
     font-weight: 600;
-    color: #666;
+    color: #333;
     margin-bottom: 0.5rem;
 }
 
