@@ -154,7 +154,13 @@ class MeetingArchive {
     formatFileName(dateString, type, customFilename = null) {
         // Parse date components directly to avoid timezone issues
         // ISO format: YYYY-MM-DD
-        const [year, month, day] = dateString.split('-').map(num => parseInt(num, 10));
+        const parts = dateString.split('-');
+        if (parts.length !== 3) {
+            console.error('Invalid date format:', dateString);
+            return '';
+        }
+        
+        const [year, month, day] = parts.map(num => parseInt(num, 10));
         
         // If a custom filename is provided, prepend the year subdirectory
         if (customFilename) {
