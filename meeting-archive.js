@@ -152,16 +152,14 @@ class MeetingArchive {
     }
 
     formatFileName(dateString, type, customFilename = null) {
-        const date = new Date(dateString);
-        const year = date.getFullYear();
+        // Parse date components directly to avoid timezone issues
+        // ISO format: YYYY-MM-DD
+        const [year, month, day] = dateString.split('-').map(num => parseInt(num, 10));
         
         // If a custom filename is provided, prepend the year subdirectory
         if (customFilename) {
             return `${year}/${customFilename}`;
         }
-        
-        const month = date.getMonth() + 1; // No padding for your format
-        const day = date.getDate(); // No padding for your format
         
         return `${year}/${month}-${day}-${year}-board-${type}.pdf`;
     }
