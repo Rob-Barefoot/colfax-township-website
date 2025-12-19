@@ -1,0 +1,226 @@
+{
+  "2025": [
+    {
+      "date": "2025-12-02",
+      "month": "December",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-11-04",
+      "month": "November", 
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-10-07",
+      "month": "October",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-09-02",
+      "month": "September",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-08-05",
+      "month": "August",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-07-01",
+      "month": "July",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-05-06",
+      "month": "May",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-04-01",
+      "month": "April",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-03-05",
+      "month": "March",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-03-05",
+      "month": "March",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Budget Meeting",
+      "filename": "3-5-2025-budget-meeting.pdf"
+    },
+    {
+      "date": "2025-02-04",
+      "month": "February",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2025-01-07",
+      "month": "January",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    }
+  ],
+  "2024": [
+    {
+      "date": "2024-12-03",
+      "month": "December",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-11-06",
+      "month": "November",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-10-01",
+      "month": "October",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-09-03",
+      "month": "September",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-08-07",
+      "month": "August",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-07-02",
+      "month": "July",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-06-04",
+      "month": "June",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-05-07",
+      "month": "May",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-04-02",
+      "month": "April",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-03-19",
+      "month": "March",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-02-06",
+      "month": "February",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2024-01-02",
+      "month": "January",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    }
+  ],
+  "2023": [
+    {
+      "date": "2023-10-03",
+      "month": "October",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2023-09-05",
+      "month": "September",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2023-08-01",
+      "month": "August",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2023-07-05",
+      "month": "July",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2023-06-06",
+      "month": "June",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2023-05-02",
+      "month": "May",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2023-04-04",
+      "month": "April",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    }
+  ]
+}

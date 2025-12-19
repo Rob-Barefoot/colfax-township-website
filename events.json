@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "title": "Township Board Meeting",
+    "date": "2026-01-06",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 2,
+    "title": "New Year's Day",
+    "date": "2026-01-01",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 3,
+    "title": "Martin Luther King Jr. Day",
+    "date": "2026-01-20",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 4,
+    "title": "Winter Festival",
+    "date": "2026-02-03",
+    "time": "12:00 PM - 4:00 PM",
+    "type": "event",
+    "location": "Community Park",
+    "description": "Family-friendly winter activities, hot chocolate, and community gathering.",
+    "url": "https://facebook.com/colfaxtownshipwinterfest",
+    "contact": {
+      "name": "Parks Committee",
+      "email": "parks@colfaxtownship.org",
+      "phone": "(xxx) xxx-xxxx"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Township Board Meeting",
+    "date": "2026-02-03",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Presidents' Day",
+    "date": "2026-02-16",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 7,
+    "title": "Good Friday",
+    "date": "2026-04-03",
+    "type": "holiday",
+    "description": "Township office closed (Michigan state holiday)"
+  },
+  {
+    "id": 8,
+    "title": "Memorial Day",
+    "date": "2026-05-25",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 9,
+    "title": "Independence Day",
+    "date": "2026-07-04",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 10,
+    "title": "Labor Day",
+    "date": "2026-09-07",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 11,
+    "title": "Columbus Day",
+    "date": "2026-10-12",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 12,
+    "title": "Election Day",
+    "date": "2026-11-03",
+    "type": "holiday",
+    "description": "Township office closed (Michigan state holiday)"
+  },
+  {
+    "id": 13,
+    "title": "Veterans Day",
+    "date": "2026-11-11",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 14,
+    "title": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 15,
+    "title": "Day After Thanksgiving",
+    "date": "2026-11-27",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 16,
+    "title": "Christmas Day",
+    "date": "2026-12-25",
+    "type": "holiday",
+    "description": "Township office closed"
+  },
+  {
+    "id": 17,
+    "title": "Township Board Meeting",
+    "date": "2026-03-22",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Township Board Meeting",
+    "date": "2026-04-07",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Township Board Meeting",
+    "date": "2026-05-05",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Township Board Meeting",
+    "date": "2026-06-02",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Township Board Meeting",
+    "date": "2026-07-07",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Township Board Meeting",
+    "date": "2026-08-05",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Township Board Meeting",
+    "date": "2026-09-01",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Township Board Meeting",
+    "date": "2026-10-06",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 25,
+    "title": "Township Board Meeting",
+    "date": "2026-11-04",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 26,
+    "title": "Township Board Meeting",
+    "date": "2026-12-01",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "link": "meetings.html",
+    "contact": {
+      "name": "Township Secretary",
+      "email": "secretary@colfaxtownship.org"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Large Item Disposal Day",
+    "date": "2026-05-09",
+    "time": "8:00 AM - 4:00 PM",
+    "type": "event",
+    "location": "Township Hall",
+    "description": "Residents can bring oversized items and large trash to the dumpster at Township Hall. Free service for township residents.",
+    "contact": {
+      "name": "Township Office",
+      "email": "info@colfaxtownship.org",
+      "phone": "(xxx) xxx-xxxx"
+    }
+  }
+]
