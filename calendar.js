@@ -125,9 +125,13 @@ class TownshipCalendar {
         const eventsList = document.getElementById('events-list');
         eventsList.innerHTML = '';
         
-        // Get upcoming events (next 60 days)
+        // Check if this is the test page and adjust day range accordingly
+        const isTestPage = window.location.pathname.includes('events-test.html');
+        const dayRange = isTestPage ? 45 : 60;
+        
+        // Get upcoming events (next 45 days for test page, 60 days for regular)
         const today = new Date();
-        const futureDate = new Date(today.getTime() + (60 * 24 * 60 * 60 * 1000));
+        const futureDate = new Date(today.getTime() + (dayRange * 24 * 60 * 60 * 1000));
         
         const upcomingEvents = this.events
             .filter(event => {

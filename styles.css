@@ -22,10 +22,31 @@ body {
 
 /* Header Styles */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #4a5d23;
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    height: 220px;
+}
+
+/* Header states during scroll */
+header.header-scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    height: 60px;
+}
+
+header.header-compact {
+    padding: 0.3rem 0;
+    background-color: rgba(74, 93, 35, 0.95);
+    backdrop-filter: blur(10px);
+    height: 45px;
 }
 
 header .container {
@@ -34,6 +55,14 @@ header .container {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -44,13 +73,36 @@ header .container {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Logo scroll states */
+header.header-scrolled .logo {
+    height: 40px;
+    max-width: 40px;
+}
+
+header.header-compact .logo {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+/* Hide logo on narrow screens to prevent menu overlap */
+@media (max-width: 1150px) {
+    .logo {
+        visibility: hidden;
+    }
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
 }
 
 nav a {
@@ -66,10 +118,139 @@ nav a.active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #654321;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #4a5d23;
+}
+
+.btn-secondary:hover {
+    background-color: #3e4a1d;
+}
+
+/* Board Members Grid Layout */
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.board-member {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.member-photo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.member-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8b4513;
+}
+
+.member-info h3 {
+    margin: 0.5rem 0;
+    color: #4a5d23;
+    font-size: 1.4rem;
+}
+
+.member-info h4 {
+    margin: 0 0 1rem 0;
+    color: #8b4513;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    background: #f4f1eb;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.contact-info p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.member-bio h5 {
+    color: #4a5d23;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.member-bio p {
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Construction Banner */
+.construction-banner {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+    border: 3px solid #ff6b35;
+}
+
+.construction-banner h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.construction-banner p {
+    margin: 0;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 /* Main Content */
 main {
     min-height: 60vh;
     padding: 2rem 0;
+    margin-top: 220px; /* Account for fixed header height */
 }
 
 /* Hero Section */
@@ -85,6 +266,7 @@ main {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    color: white !important;
 }
 
 .hero p {
@@ -1205,6 +1387,10 @@ address {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    main {
+        margin-top: 200px; /* Smaller margin for mobile header */
+    }
+    
     header .container {
         flex-direction: column;
         text-align: center;
@@ -1212,8 +1398,8 @@ address {
     }
     
     .logo {
-        height: 150px;
-        max-width: 150px;
+        height: 50px;
+        max-width: 50px;
     }
     
     nav ul {

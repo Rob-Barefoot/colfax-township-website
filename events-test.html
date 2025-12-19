@@ -28,9 +28,21 @@
         <div class="container">
             <h2>Community Events</h2>
             <p>Stay informed about upcoming events, meetings, and township office hours.</p>
-            <p><a href="events-test.html" style="color: #8b4513; font-weight: bold;">→ View Test Layout</a></p>
+            
+            <p style="background: #f4f1eb; padding: 1rem; border-left: 4px solid #8b4513; margin: 1rem 0; font-style: italic;">
+                <strong>Tip:</strong> Scroll down to view the full calendar if you prefer to browse events by date.
+            </p>
+            
+            <section class="events-list-section">
+                <h3>Upcoming Events</h3>
+                <div id="events-list">
+                    <!-- Events will be loaded here by JavaScript -->
+                    <p>Loading events...</p>
+                </div>
+            </section>
             
             <section class="calendar-section">
+                <h3>Event Calendar</h3>
                 <div class="calendar-container">
                     <div class="calendar-header">
                         <button id="prev-month" class="nav-btn">&lt;</button>
@@ -49,14 +61,6 @@
                         <span class="legend-item"><span class="event-dot meeting"></span> Meetings</span>
                         <span class="legend-item"><span class="event-dot holiday"></span> Holidays/Closures</span>
                     </div>
-                </div>
-            </section>
-            
-            <section class="events-list-section">
-                <h3>Upcoming Events</h3>
-                <div id="events-list">
-                    <!-- Events will be loaded here by JavaScript -->
-                    <p>Loading events...</p>
                 </div>
             </section>
         </div>
