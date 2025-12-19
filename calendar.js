@@ -79,6 +79,12 @@ class TownshipCalendar {
                     
                     if (dayEvents.length > 0) {
                         cell.classList.add('has-events');
+                        cell.style.cursor = 'pointer';
+                        
+                        // Add click handler for events popup
+                        cell.addEventListener('click', () => {
+                            this.showEventModal(dateString, dayEvents);
+                        });
                         
                         // Create event indicators
                         const eventContainer = document.createElement('div');
@@ -229,6 +235,57 @@ class TownshipCalendar {
         this.currentMonth = today.getMonth();
         this.currentYear = today.getFullYear();
         this.renderCalendar();
+    }
+
+    showEventModal(dateString, events) {
+        const eventDate = new Date(dateString + 'T00:00:00');
+        const formattedDate = eventDate.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        let modalContent = `
+            <div class="event-modal-header">
+                <h3>Events for ${formattedDate}</h3>
+                <button class="modal-close" onclick="this.closest('.event-modal').style.display='none'">&times;</button>
+            </div>
+            <div class="event-modal-body">
+        `;
+
+        events.forEach(event => {
+            modalContent += `
+                <div class="modal-event-item ${event.type}">
+                    <h4>${event.title}</h4>
+                    ${event.time ? `<p><strong>Time:</strong> ${event.time}</p>` : ''}
+                    ${event.location ? `<p><strong>Location:</strong> ${event.location}</p>` : ''}
+                    ${event.description ? `<p>${event.description}</p>` : ''}
+                    ${event.contact && event.contact.email ? `<p><strong>Contact:</strong> <a href="mailto:${event.contact.email}">${event.contact.name || event.contact.email}</a></p>` : ''}
+                </div>
+            `;
+        });
+
+        modalContent += `</div>`;
+
+        // Create or update modal
+        let modal = document.getElementById('event-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'event-modal';
+            modal.className = 'event-modal';
+            document.body.appendChild(modal);
+        }
+
+        modal.innerHTML = modalContent;
+        modal.style.display = 'flex';
+
+        // Close modal when clicking outside
+        modal.onclick = function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
     }
 }
 

@@ -1064,6 +1064,126 @@ address {
     font-size: 0.8rem;
 }
 
+/* Event Modal Styles */
+.event-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.event-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: #4a5d23;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.event-modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.event-modal-body {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
+    max-width: 500px;
+    max-height: 70vh;
+    overflow-y: auto;
+    width: 90vw;
+}
+
+.modal-event-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #8b4513;
+}
+
+.modal-event-item.meeting {
+    border-left-color: #4a5d23;
+    background: #f8f9f6;
+}
+
+.modal-event-item.holiday {
+    border-left-color: #d2691e;
+    background: #fef8f0;
+}
+
+.modal-event-item.event {
+    border-left-color: #8b4513;
+    background: #faf8f5;
+}
+
+.modal-event-item:last-child {
+    margin-bottom: 0;
+}
+
+.modal-event-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: #4a5d23;
+}
+
+.modal-event-item p {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.modal-event-item a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+.modal-event-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .event-modal-body {
+        width: 95vw;
+        max-height: 80vh;
+        padding: 1rem;
+    }
+    
+    .event-modal-header {
+        padding: 1rem;
+    }
+    
+    .event-modal-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
 .archive-help {
     text-align: center;
     margin-top: 2rem;
