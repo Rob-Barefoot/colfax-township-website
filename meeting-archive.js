@@ -152,15 +152,16 @@ class MeetingArchive {
     }
 
     formatFileName(dateString, type, customFilename = null) {
-        // If a custom filename is provided, use it
+        const date = new Date(dateString);
+        const year = date.getFullYear();
+        
+        // If a custom filename is provided, prepend the year subdirectory
         if (customFilename) {
-            return customFilename;
+            return `${year}/${customFilename}`;
         }
         
-        const date = new Date(dateString);
         const month = date.getMonth() + 1; // No padding for your format
         const day = date.getDate(); // No padding for your format
-        const year = date.getFullYear();
         
         return `${year}/${month}-${day}-${year}-board-${type}.pdf`;
     }
