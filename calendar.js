@@ -154,17 +154,20 @@ class TownshipCalendar {
             
             // Parse date string directly
             const [year, month, day] = event.date.split('-').map(num => parseInt(num, 10));
-            const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                'July', 'August', 'September', 'October', 'November', 'December'];
+            const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
             
             // Calculate day of week (basic algorithm)
             const date = new Date(year, month - 1, day);
             const dayOfWeek = date.getDay();
-            const formattedDate = `${dayNames[dayOfWeek]}, ${monthNames[month - 1]} ${day}, ${year}`;
             
             let eventHTML = `
-                <div class="event-date">${formattedDate}</div>
+                <div class="event-date">
+                    <span class="month">${monthNames[month - 1]}</span>
+                    <span class="day">${day}</span>
+                    <span class="year">${year}</span>
+                </div>
                 <div class="event-details">
                     <h4>${event.title}</h4>
             `;

@@ -201,5 +201,103 @@
       "name": "Feeding America West Michigan",
       "email": "info@feedwm.org"
     }
+  },
+  {
+    "id": 19,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2025-12-23",
+    "time": "11:00 AM",
+    "type": "event",
+    "location": "Lake Township Fire Hall, 15580 South Star Lake Dr, Baldwin, MI 49304",
+    "description": "Feeding America mobile food pantry serving Lake County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2026-01-08",
+    "time": "3:00 PM",
+    "type": "event",
+    "location": "Luther Lions Club, 1003 N State Road, Luther, MI 49656",
+    "description": "Feeding America mobile food pantry serving Lake County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Mobile Food Pantry - Seniors Only",
+    "date": "2026-01-16",
+    "time": "11:30 AM",
+    "type": "event",
+    "location": "Lake County Meals, 690 9th Street, Baldwin, MI 49304",
+    "description": "Feeding America mobile food pantry serving Lake County seniors only. Drive-thru distribution to help seniors with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2025-12-30",
+    "time": "5:30 PM",
+    "type": "event",
+    "location": "White Cloud UMC, 1125 E Newell St, White Cloud, MI 49349",
+    "description": "Feeding America mobile food pantry serving Newaygo County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2026-01-03",
+    "time": "2:00 PM",
+    "type": "event",
+    "location": "The Vine Assembly of God Church, 112 Commerce, Grant, MI 49327",
+    "description": "Feeding America mobile food pantry serving Newaygo County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2026-01-06",
+    "time": "4:30 PM",
+    "type": "event",
+    "location": "Fremont United Methodist Church, 351 Butterfield Street, Fremont, MI 49412",
+    "description": "Feeding America mobile food pantry serving Newaygo County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 25,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2026-01-14",
+    "time": "10:00 AM",
+    "type": "event",
+    "location": "TrueNorth Community Services, 6308 South Warner Ave, Fremont, MI 49412",
+    "description": "Feeding America mobile food pantry serving Newaygo County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
   }
 ]

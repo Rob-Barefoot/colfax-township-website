@@ -393,7 +393,8 @@ main {
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
-    min-width: 100px;
+    width: 240px;
+    flex-shrink: 0;
     height: fit-content;
 }
 
@@ -784,6 +785,9 @@ li {
     margin: 1rem 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-left: 4px solid #8b4513;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 .event-item.meeting {
@@ -796,9 +800,36 @@ li {
 }
 
 .event-item .event-date {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
+    background: #4a5d23;
+    color: white !important;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 240px;
+    flex-shrink: 0;
+    height: fit-content;
+}
+
+.event-item .event-date * {
+    color: white !important;
+}
+
+.event-item .event-date .month {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.event-item .event-date .day {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.25rem 0;
+}
+
+.event-item .event-date .year {
+    display: block;
+    font-size: 0.9rem;
 }
 
 .event-item h4 {
@@ -1459,7 +1490,8 @@ address {
     
     .event-date {
         align-self: flex-start;
-        min-width: 80px;
+        width: 200px;
+        flex-shrink: 0;
     }
     
     .links-grid,
