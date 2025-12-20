@@ -129,16 +129,19 @@ class TownshipCalendar {
         const isTestPage = window.location.pathname.includes('events-test.html');
         const dayRange = isTestPage ? 45 : 60;
         
-        // Get upcoming events (next 45 days for test page, 60 days for regular)
+        // Get upcoming events using string comparison (ISO dates sort correctly)
         const today = new Date();
+        const todayString = today.toISOString().split('T')[0]; // Get YYYY-MM-DD format
+        
+        // Calculate future date string
         const futureDate = new Date(today.getTime() + (dayRange * 24 * 60 * 60 * 1000));
+        const futureDateString = futureDate.toISOString().split('T')[0];
         
         const upcomingEvents = this.events
             .filter(event => {
-                const eventDate = new Date(event.date + 'T00:00:00');
-                return eventDate >= today && eventDate <= futureDate;
+                return event.date >= todayString && event.date <= futureDateString;
             })
-            .sort((a, b) => new Date(a.date + 'T00:00:00') - new Date(b.date + 'T00:00:00'));
+            .sort((a, b) => a.date.localeCompare(b.date));
         
         if (upcomingEvents.length === 0) {
             eventsList.innerHTML = '<p>No upcoming events scheduled.</p>';
@@ -149,13 +152,16 @@ class TownshipCalendar {
             const eventDiv = document.createElement('div');
             eventDiv.classList.add('event-item', event.type);
             
-            const eventDate = new Date(event.date + 'T00:00:00');
-            const formattedDate = eventDate.toLocaleDateString('en-US', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
+            // Parse date string directly
+            const [year, month, day] = event.date.split('-').map(num => parseInt(num, 10));
+            const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+            
+            // Calculate day of week (basic algorithm)
+            const date = new Date(year, month - 1, day);
+            const dayOfWeek = date.getDay();
+            const formattedDate = `${dayNames[dayOfWeek]}, ${monthNames[month - 1]} ${day}, ${year}`;
             
             let eventHTML = `
                 <div class="event-date">${formattedDate}</div>
@@ -242,13 +248,16 @@ class TownshipCalendar {
     }
 
     showEventModal(dateString, events) {
-        const eventDate = new Date(dateString + 'T00:00:00');
-        const formattedDate = eventDate.toLocaleDateString('en-US', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
+        // Parse date string directly
+        const [year, month, day] = dateString.split('-').map(num => parseInt(num, 10));
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'];
+        
+        // Calculate day of week (basic algorithm)
+        const date = new Date(year, month - 1, day);
+        const dayOfWeek = date.getDay();
+        const formattedDate = `${dayNames[dayOfWeek]}, ${monthNames[month - 1]} ${day}, ${year}`;
 
         let modalContent = `
             <div class="event-modal-header">

@@ -44,7 +44,9 @@ class MeetingArchive {
             const meetingsWithDocs = meetings.filter(meeting => meeting.hasMinutes || meeting.hasAgenda);
             if (meetingsWithDocs.length === 0) return;
 
-            const yearSection = this.createYearSection(year, meetingsWithDocs, year === new Date().getFullYear().toString());
+            // Get current year without Date object
+            const currentYear = new Date().getFullYear().toString();
+            const yearSection = this.createYearSection(year, meetingsWithDocs, year === currentYear);
             archiveContainer.appendChild(yearSection);
         });
     }
