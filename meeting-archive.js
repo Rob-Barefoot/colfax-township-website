@@ -89,7 +89,10 @@ class MeetingArchive {
             
             monthMeetings.forEach(meeting => {
                 const listItem = document.createElement('li');
-                const meetingDate = new Date(meeting.date);
+                // Parse date components directly to avoid timezone issues
+                const parts = meeting.date.split('-');
+                const [year, month, day] = parts.map(num => parseInt(num, 10));
+                const meetingDate = new Date(year, month - 1, day); // month is 0-indexed
                 const formattedDate = meetingDate.toLocaleDateString('en-US', { 
                     month: 'long', 
                     day: 'numeric' 
@@ -145,7 +148,14 @@ class MeetingArchive {
         
         // Sort meetings within each month by date
         Object.keys(groups).forEach(month => {
-            groups[month].sort((a, b) => new Date(b.date) - new Date(a.date));
+            groups[month].sort((a, b) => {
+                // Parse dates directly to avoid timezone issues
+                const partsA = a.date.split('-');
+                const partsB = b.date.split('-');
+                const dateA = new Date(parseInt(partsA[0]), parseInt(partsA[1]) - 1, parseInt(partsA[2]));
+                const dateB = new Date(parseInt(partsB[0]), parseInt(partsB[1]) - 1, parseInt(partsB[2]));
+                return dateB - dateA;
+            });
         });
         
         return groups;
@@ -247,7 +257,10 @@ class MeetingArchive {
     }
 
     formatDate(dateString) {
-        const date = new Date(dateString);
+        // Parse date components directly to avoid timezone issues
+        const parts = dateString.split('-');
+        const [year, month, day] = parts.map(num => parseInt(num, 10));
+        const date = new Date(year, month - 1, day); // month is 0-indexed
         return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
 
