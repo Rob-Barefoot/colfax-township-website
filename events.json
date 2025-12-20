@@ -173,5 +173,33 @@
     "date": "2026-12-25",
     "type": "holiday",
     "description": "Township office closed"
+  },
+  {
+    "id": 17,
+    "title": "Mobile Food Pantry - Drive Thru",
+    "date": "2026-01-09",
+    "time": "4:30 PM",
+    "type": "event",
+    "location": "New Hope Community Church, 244 S. 79th Street, Shelby, MI 49455",
+    "description": "Feeding America mobile food pantry serving Oceana County residents. Drive-thru distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Mobile Food Pantry - Walk Up",
+    "date": "2026-01-15",
+    "time": "5:00 PM", 
+    "type": "event",
+    "location": "Shelby Road Baptist Church, 4066 W. Shelby Rd., Shelby, MI 49455",
+    "description": "Feeding America mobile food pantry serving Oceana County residents. Walk-up distribution to help families with food insecurity.",
+    "url": "https://www.feedwm.org/",
+    "contact": {
+      "name": "Feeding America West Michigan",
+      "email": "info@feedwm.org"
+    }
   }
 ]
