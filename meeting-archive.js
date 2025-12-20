@@ -96,8 +96,6 @@ class MeetingArchive {
                 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
                     'July', 'August', 'September', 'October', 'November', 'December'];
                 const formattedDate = `${monthNames[month - 1]} ${day}`;
-                 
-                });
                 
                 let links = [];
                 if (meeting.hasMinutes) {
