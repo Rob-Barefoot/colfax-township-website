@@ -89,13 +89,12 @@ class MeetingArchive {
             
             monthMeetings.forEach(meeting => {
                 const listItem = document.createElement('li');
-                // Parse date components directly to avoid timezone issues
-                const parts = meeting.date.split('-');
-                const [year, month, day] = parts.map(num => parseInt(num, 10));
-                const meetingDate = new Date(year, month - 1, day); // month is 0-indexed
-                const formattedDate = meetingDate.toLocaleDateString('en-US', { 
-                    month: 'long', 
-                    day: 'numeric' 
+                // Parse date string directly without Date object
+                const [year, month, day] = meeting.date.split('-').map(num => parseInt(num, 10));
+                const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                    'July', 'August', 'September', 'October', 'November', 'December'];
+                const formattedDate = `${monthNames[month - 1]} ${day}`;
+                 
                 });
                 
                 let links = [];
@@ -148,14 +147,8 @@ class MeetingArchive {
         
         // Sort meetings within each month by date
         Object.keys(groups).forEach(month => {
-            groups[month].sort((a, b) => {
-                // Parse dates directly to avoid timezone issues
-                const partsA = a.date.split('-');
-                const partsB = b.date.split('-');
-                const dateA = new Date(parseInt(partsA[0]), parseInt(partsA[1]) - 1, parseInt(partsA[2]));
-                const dateB = new Date(parseInt(partsB[0]), parseInt(partsB[1]) - 1, parseInt(partsB[2]));
-                return dateB - dateA;
-            });
+            // ISO date strings (YYYY-MM-DD) can be compared directly
+            groups[month].sort((a, b) => b.date.localeCompare(a.date));
         });
         
         return groups;
@@ -257,11 +250,11 @@ class MeetingArchive {
     }
 
     formatDate(dateString) {
-        // Parse date components directly to avoid timezone issues
-        const parts = dateString.split('-');
-        const [year, month, day] = parts.map(num => parseInt(num, 10));
-        const date = new Date(year, month - 1, day); // month is 0-indexed
-        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        // Parse date string directly without Date object
+        const [year, month, day] = dateString.split('-').map(num => parseInt(num, 10));
+        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return `${monthNames[month - 1]} ${day}`;
     }
 
     groupByMonth(yearData) {
