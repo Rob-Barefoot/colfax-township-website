@@ -239,7 +239,7 @@ class MeetingArchive {
                     }
                 }
             } else {
-                html += `<span class="no-minutes">No meetings scheduled</span>`;
+                html += `<span class="no-minutes">Meeting minutes unavailable</span>`;
             }
             
             html += `</div>`;

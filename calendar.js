@@ -16,7 +16,9 @@ class TownshipCalendar {
 
     async loadEvents() {
         try {
-            const response = await fetch('events.json');
+            // Check if we're in a subdirectory and adjust path accordingly
+            const eventsPath = window.location.pathname.includes('/community/') ? '../events.json' : 'events.json';
+            const response = await fetch(eventsPath);
             this.events = await response.json();
             this.renderCalendar();
             this.renderEventsList();

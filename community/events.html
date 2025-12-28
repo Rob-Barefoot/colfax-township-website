@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Events - Colfax Township</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="calendar.js"></script>
-    <script src="header-scroll.js"></script>
+    <title>Events - Colfax Township</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../calendar.js"></script>
+    <script src="../header-scroll.js"></script>
+    <script>
+        // Override the loadEvents method to use correct path from subdirectory
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.TownshipCalendar) {
+                const originalLoadEvents = TownshipCalendar.prototype.loadEvents;
+                TownshipCalendar.prototype.loadEvents = async function() {
+                    try {
+                        const response = await fetch('../events.json');
+                        this.events = await response.json();
+                        this.renderEventsList();
+                    } catch (error) {
+                        console.error('Error loading events:', error);
+                        document.getElementById('events-list').innerHTML = '<p>Unable to load events at this time.</p>';
+                    }
+                };
+            }
+        });
+    </script>
 </head>
-<body>
+<body class="community-page">
     <header>
         <div class="container">
-            <img src="assets/images/branding/township-logo.png" alt="Colfax Township Logo" class="logo">
+            <img src="../assets/images/branding/township-logo.png" alt="Colfax Township Logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="events.html" class="active">Community Events</a></li>
-                    <li><a href="board.html">Board</a></li>
-                    <li><a href="meetings.html">Meetings</a></li>
-                    <li><a href="services.html">Services &amp; Resources</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../community.html" class="active">Community</a></li>
+                    <li><a href="../board.html">Board</a></li>
+                    <li><a href="../meetings.html">Meetings</a></li>
+                    <li><a href="../services.html">Services &amp; Resources</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Community Submenu -->
+    <nav class="community-submenu">
+        <div class="container">
+            <ul>
+                <li><a href="events.html" class="active">Upcoming Events</a></li>
+                <li><a href="projects.html">Ongoing Projects</a></li>
+                <li><a href="archive.html">Archives</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
         <div class="container">
-            <h2>Community Events</h2>
+            <h2>Upcoming Events</h2>
             <p>Stay informed about upcoming events, meetings, and township office hours.</p>
             
             <div class="announcement" style="background: #e8f5e8; border-left: 4px solid #4a5d23;">
                 <h4 style="color: #4a5d23; margin-bottom: 0.5rem;">📅 Submit Your Community Event</h4>
-                <p style="margin-bottom: 0;">Have a community event you'd like listed? Please email the township clerk at <a href="mailto:jonigerard80@yahoo.com" style="color: #4a5d23; font-weight: 600;">jonigerard80@yahoo.com</a> with information about your event.</p>
+                <p style="margin-bottom: 0;">Have a community event you'd like listed? Please email the township clerk at <a href="mailto:jonimgerard80@yahoo.com" style="color: #4a5d23; font-weight: 600;">jonimgerard80@yahoo.com</a> with information about your event.</p>
             </div>
             
             <p style="background: #f4f1eb; padding: 1rem; border-left: 4px solid #8b4513; margin: 1rem 0; font-style: italic;">
@@ -86,5 +115,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

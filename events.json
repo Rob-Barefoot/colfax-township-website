@@ -285,19 +285,5 @@
       "name": "Feeding America West Michigan",
       "email": "info@feedwm.org"
     }
-  },
-  {
-    "id": 25,
-    "title": "Mobile Food Pantry - Drive Thru",
-    "date": "2026-01-14",
-    "time": "10:00 AM",
-    "type": "event",
-    "location": "TrueNorth Community Services, 6308 South Warner Ave, Fremont, MI 49412",
-    "description": "Feeding America mobile food pantry serving Newaygo County residents. Drive-thru distribution to help families with food insecurity.",
-    "url": "https://www.feedwm.org/",
-    "contact": {
-      "name": "Feeding America West Michigan",
-      "email": "info@feedwm.org"
-    }
   }
 ]
