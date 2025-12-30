@@ -28,7 +28,7 @@ This guide explains how to add, update, and manage content on the Colfax Townshi
 </div>
 ```
 
-4. **Update events.json** for calendar integration:
+4. **Update assets/data/events.json** for calendar integration:
 ```json
 {
     "date": "2026-01-15",
@@ -111,7 +111,7 @@ This guide explains how to add, update, and manage content on the Colfax Townshi
 ```
 
 5. **Remove the original** from events.html or projects.html
-6. **Update any calendar entries** in events.json if needed
+6. **Update any calendar entries** in assets/data/events.json if needed
 
 ## 📸 Adding Photos to Galleries
 
@@ -182,7 +182,7 @@ compress_and_orient_image('original-photo.jpg', 'assets/images/community/event-n
 
 ## 📅 Calendar Integration
 
-### Updating events.json:
+### Updating assets/data/events.json:
 ```json
 [
     {
@@ -262,7 +262,7 @@ git push
 | Add event | `community/events.html` | `<div class="events-list-section">` |
 | Add project | `community/projects.html` | `<div class="projects-grid">` | 
 | Add archive | `community/archive.html` | `<div class="archive-grid">` |
-| Update calendar | `events.json` | Add JSON object |
+| Update calendar | `assets/data/events.json` | Add JSON object |
 | Add board member | `board.html` | `<div class="board-grid">` |
 
 For questions or technical issues, contact the webmaster or refer to the GitHub repository documentation.

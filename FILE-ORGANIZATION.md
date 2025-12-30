@@ -79,7 +79,7 @@ Use descriptive names with hyphens
 
 ## Event Data Structure
 
-When adding events to `events.json`, you can include these fields:
+When adding events to `assets/data/events.json`, you can include these fields:
 
 **Required Fields:**
 - `id` - Unique number for each event

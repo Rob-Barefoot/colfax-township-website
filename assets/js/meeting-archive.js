@@ -9,7 +9,7 @@ class MeetingArchive {
 
     async loadArchive() {
         try {
-            const response = await fetch('meeting-archive.json');
+            const response = await fetch('assets/data/meeting-archive.json');
             this.archiveData = await response.json();
             
             // Render regular archive if container exists

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Colfax Township</title>
     <link rel="stylesheet" href="../styles.css">
-    <script src="../calendar.js"></script>
-    <script src="../header-scroll.js"></script>
+    <script src="../assets/js/calendar.js"></script>
+    <script src="../assets/js/header-scroll.js"></script>
     <script>
         // Override the loadEvents method to use correct path from subdirectory
         document.addEventListener('DOMContentLoaded', function() {
@@ -14,7 +14,7 @@
                 const originalLoadEvents = TownshipCalendar.prototype.loadEvents;
                 TownshipCalendar.prototype.loadEvents = async function() {
                     try {
-                        const response = await fetch('../events.json');
+                        const response = await fetch('../assets/data/events.json');
                         this.events = await response.json();
                         this.renderEventsList();
                     } catch (error) {
