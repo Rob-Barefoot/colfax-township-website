@@ -1293,6 +1293,31 @@ address {
     margin: 1rem 0;
 }
 
+/* Map links within addresses */
+address .map-link {
+    color: #4a5d23;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+address .map-link:hover {
+    color: #2c3515;
+    transform: translateY(-1px);
+    text-decoration: underline;
+}
+
+address .map-link:before {
+    content: "📍 ";
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+address .map-link:hover:before {
+    opacity: 1;
+}
+
 /* Meeting Archive Comparison Styles */
 .archive-comparison {
     display: flex;
