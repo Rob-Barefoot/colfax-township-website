@@ -181,9 +181,9 @@ class MeetingArchive {
             <div class="archive-fallback">
                 <p>Recent meeting minutes:</p>
                 <ul>
-                    <li><a href="documents/meeting-minutes/board/12-18-2025-board-minutes.pdf">December 18, 2025 - Regular Meeting Minutes</a></li>
-                    <li><a href="documents/meeting-minutes/board/11-20-2025-board-minutes.pdf">November 20, 2025 - Regular Meeting Minutes</a></li>
-                    <li><a href="documents/meeting-minutes/board/10-16-2025-board-minutes.pdf">October 16, 2025 - Regular Meeting Minutes</a></li>
+                    <li><a href="documents/meeting-minutes/board/2025/12-2-2025-board-minutes.pdf">December 2, 2025 - Regular Meeting Minutes</a></li>
+                    <li><a href="documents/meeting-minutes/board/2025/11-4-2025-board-minutes.pdf">November 4, 2025 - Regular Meeting Minutes</a></li>
+                    <li><a href="documents/meeting-minutes/board/2025/10-7-2025-board-minutes.pdf">October 7, 2025 - Regular Meeting Minutes</a></li>
                 </ul>
                 <p><a href="services.html#foia">Request additional meeting minutes via FOIA</a></p>
             </div>
@@ -233,7 +233,8 @@ class MeetingArchive {
                     html += `<div class="meeting-date">${this.formatDate(meeting.date)} - ${meeting.title}</div>`;
                     if (meeting.hasMinutes) {
                         const minutesFile = meeting.filename || `${meeting.date.replace(/-/g, '-')}-board-minutes.pdf`;
-                        html += `<a href="documents/meeting-minutes/board/${minutesFile}" class="meeting-link">View Minutes</a>`;
+                        const [year] = meeting.date.split('-');
+                        html += `<a href="documents/meeting-minutes/board/${year}/${minutesFile}" class="meeting-link">View Minutes</a>`;
                     } else {
                         html += `<span class="no-minutes">No minutes available</span>`;
                     }

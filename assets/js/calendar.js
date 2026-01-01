@@ -189,7 +189,10 @@ class TownshipCalendar {
             // Add links section
             const links = [];
             if (event.link) {
-                links.push(`<a href="${event.link}">More Information</a>`);
+                // Adjust relative paths if we're in a subdirectory
+                const adjustedLink = window.location.pathname.includes('/community/') && !event.link.startsWith('http') && !event.link.startsWith('../') ? 
+                    `../${event.link}` : event.link;
+                links.push(`<a href="${adjustedLink}">More Information</a>`);
             }
             if (event.url) {
                 links.push(`<a href="${event.url}" target="_blank" rel="noopener">Event Website</a>`);
