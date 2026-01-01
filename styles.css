@@ -1807,11 +1807,21 @@ address .map-link:hover:before {
     nav ul {
         justify-content: center;
         gap: 1rem;
+        flex-wrap: wrap;
     }
     
     nav a {
         padding: 0.5rem;
         font-size: 0.9rem;
+    }
+    
+    /* Fix mobile navigation positioning to prevent home button from being cut off */
+    header nav {
+        position: static;
+        transform: none;
+        left: auto;
+        top: auto;
+        width: 100%;
     }
     
     .hero h2 {
