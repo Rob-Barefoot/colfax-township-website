@@ -232,7 +232,7 @@ class MeetingArchive {
                 for (const meeting of meetings) {
                     html += `<div class="meeting-date">${this.formatDate(meeting.date)} - ${meeting.title}</div>`;
                     if (meeting.hasMinutes) {
-                        const minutesFile = meeting.filename || `${meeting.date.replace(/-/g, '-')}-board-minutes.pdf`;
+                        const minutesFile = meeting.filename || this.formatFileName(meeting.date, 'minutes').split('/')[1];
                         const [year] = meeting.date.split('-');
                         html += `<a href="documents/meeting-minutes/board/${year}/${minutesFile}" class="meeting-link">View Minutes</a>`;
                     } else {
