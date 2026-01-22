@@ -9,6 +9,43 @@
     <script src="assets/js/header-scroll.js"></script>
     <script src="assets/js/shared-footer.js"></script>
     <script src="assets/js/smart-maps.js"></script>
+    <script>
+        // Load next meeting dynamically
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                const response = await fetch('assets/data/events.json');
+                const events = await response.json();
+                
+                // Get today's date in YYYY-MM-DD format
+                const today = new Date();
+                const todayString = today.toISOString().split('T')[0];
+                
+                // Find the next meeting after today
+                const nextMeeting = events
+                    .filter(event => event.type === 'meeting' && event.date >= todayString)
+                    .sort((a, b) => a.date.localeCompare(b.date))[0];
+                
+                if (nextMeeting) {
+                    // Format the date nicely
+                    const dateObj = new Date(nextMeeting.date + 'T00:00:00');
+                    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    const formattedDate = dateObj.toLocaleDateString('en-US', options);
+                    
+                    // Update the HTML
+                    const nextMeetingDiv = document.querySelector('.next-meeting-simple');
+                    if (nextMeetingDiv) {
+                        nextMeetingDiv.innerHTML = `
+                            <h4>${formattedDate}</h4>
+                            <p>${nextMeeting.time} - ${nextMeeting.description}</p>
+                            <p>View all meetings and details on our <a href="community/events.html">events calendar</a>.</p>
+                        `;
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading next meeting:', error);
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -39,7 +76,7 @@
                 <h3>Next Meeting</h3>
                 
                 <div class="next-meeting-simple">
-                    <h4>January 6, 2026</h4>
+                    <h4>February 3, 2026</h4>
                     <p>7:00 PM - Regular Board Meeting</p>
                     <p>View all meetings and details on our <a href="community/events.html">events calendar</a>.</p>
                 </div>

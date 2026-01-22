@@ -120,6 +120,15 @@
     "description": "Township office closed"
   },
   {
+    "id": 25,
+    "title": "School Section Lake Boat Parade",
+    "date": "2026-07-04",
+    "time": "7:00 PM",
+    "type": "event",
+    "location": "School Section Lake Beach",
+    "description": "Annual Independence Day boat parade on School Section Lake. Join us for a festive celebration on the water featuring decorated boats and community spirit."
+  },
+  {
     "id": 12,
     "title": "Township Board Meeting",
     "date": "2026-07-07",
