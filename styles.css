@@ -103,6 +103,20 @@ a[target="_blank"] {
     position: relative;
 }
 
+/* PDF Link Indicator - lets users know a link opens a PDF document */
+a[href$=".pdf"]::after {
+    content: " (PDF)";
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+/* When a PDF link also opens in new tab, show both indicators */
+a[href$=".pdf"][target="_blank"]::after {
+    content: " (PDF) \2197";
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
 /* ========================================
    END ACCESSIBILITY STYLES
    ======================================== */
@@ -1824,7 +1838,7 @@ address .map-link:hover:before {
 }
 
 .no-minutes {
-    color: #999;
+    color: #666;
     font-style: italic;
     font-size: 0.8rem;
 }
