@@ -100,11 +100,11 @@ class MeetingArchive {
                 let links = [];
                 if (meeting.hasMinutes) {
                     const minutesFile = this.formatFileName(meeting.date, 'minutes', meeting.filename);
-                    links.push(`<a href="documents/meeting-minutes/board/${minutesFile}">Minutes</a>`);
+                    links.push(`<a href="documents/meeting-minutes/board/${minutesFile}" target="_blank">Minutes</a>`);
                 }
                 if (meeting.hasAgenda) {
                     const agendaFile = this.formatFileName(meeting.date, 'agenda');
-                    links.push(`<a href="documents/meeting-minutes/board/${agendaFile}">Agenda</a>`);
+                    links.push(`<a href="documents/meeting-minutes/board/${agendaFile}" target="_blank">Agenda</a>`);
                 }
                 
                 listItem.innerHTML = `
@@ -181,9 +181,9 @@ class MeetingArchive {
             <div class="archive-fallback">
                 <p>Recent meeting minutes:</p>
                 <ul>
-                    <li><a href="documents/meeting-minutes/board/2025/12-2-2025-board-minutes.pdf">December 2, 2025 - Regular Meeting Minutes</a></li>
-                    <li><a href="documents/meeting-minutes/board/2025/11-4-2025-board-minutes.pdf">November 4, 2025 - Regular Meeting Minutes</a></li>
-                    <li><a href="documents/meeting-minutes/board/2025/10-7-2025-board-minutes.pdf">October 7, 2025 - Regular Meeting Minutes</a></li>
+                    <li><a href="documents/meeting-minutes/board/2025/12-2-2025-board-minutes.pdf" target="_blank">December 2, 2025 - Regular Meeting Minutes</a></li>
+                    <li><a href="documents/meeting-minutes/board/2025/11-4-2025-board-minutes.pdf" target="_blank">November 4, 2025 - Regular Meeting Minutes</a></li>
+                    <li><a href="documents/meeting-minutes/board/2025/10-7-2025-board-minutes.pdf" target="_blank">October 7, 2025 - Regular Meeting Minutes</a></li>
                 </ul>
                 <p><a href="services.html#foia">Request additional meeting minutes via FOIA</a></p>
             </div>
@@ -234,7 +234,7 @@ class MeetingArchive {
                     if (meeting.hasMinutes) {
                         const minutesFile = meeting.filename || this.formatFileName(meeting.date, 'minutes').split('/')[1];
                         const [year] = meeting.date.split('-');
-                        html += `<a href="documents/meeting-minutes/board/${year}/${minutesFile}" class="meeting-link">View Minutes</a>`;
+                        html += `<a href="documents/meeting-minutes/board/${year}/${minutesFile}" class="meeting-link" target="_blank">View Minutes</a>`;
                     } else {
                         html += `<span class="no-minutes">No minutes available</span>`;
                     }
