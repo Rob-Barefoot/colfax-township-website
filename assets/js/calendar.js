@@ -195,7 +195,7 @@ class TownshipCalendar {
                 links.push(`<a href="${adjustedLink}">More Information</a>`);
             }
             if (event.url) {
-                links.push(`<a href="${event.url}" target="_blank" rel="noopener">Event Website</a>`);
+                links.push(`<a href="${event.url}" target="_blank" rel="noopener noreferrer">Event Website<span class="sr-only"> (opens in new window)</span></a>`);
             }
             
             if (links.length > 0) {
@@ -270,7 +270,7 @@ class TownshipCalendar {
         let modalContent = `
             <div class="event-modal-header">
                 <h3>Events for ${formattedDate}</h3>
-                <button class="modal-close" onclick="this.closest('.event-modal').style.display='none'">&times;</button>
+                <button class="modal-close" aria-label="Close dialog" onclick="this.closest('.event-modal').style.display='none'">&times;</button>
             </div>
             <div class="event-modal-body">
         `;

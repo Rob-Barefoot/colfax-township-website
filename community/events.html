@@ -29,10 +29,11 @@
     </script>
 </head>
 <body class="community-page">
-    <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
         <div class="container">
             <img src="../assets/images/branding/township-logo.png" alt="Colfax Township Logo" class="logo">
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../community.html" class="active">Community</a></li>
@@ -45,7 +46,7 @@
     </header>
 
     <!-- Community Submenu -->
-    <nav class="community-submenu">
+    <nav class="community-submenu" aria-label="Community section navigation">
         <div class="container">
             <ul>
                 <li><a href="events.html" class="active">Upcoming Events</a></li>
@@ -55,9 +56,9 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main-content" role="main">
         <div class="container">
-            <h2>Upcoming Events</h2>
+            <h1>Upcoming Events</h1>
             <p>Stay informed about upcoming events, meetings, and township office hours.</p>
             
             <div class="announcement" style="background: #e8f5e8; border-left: 4px solid #4a5d23;">
@@ -81,21 +82,21 @@
                 <h3>Event Calendar</h3>
                 <div class="calendar-container">
                     <div class="calendar-header">
-                        <button id="prev-month" class="nav-btn">&lt;</button>
+                        <button id="prev-month" class="nav-btn" aria-label="Previous month">&lt;</button>
                         <h3 id="month-year"></h3>
-                        <button id="next-month" class="nav-btn">&gt;</button>
+                        <button id="next-month" class="nav-btn" aria-label="Next month">&gt;</button>
                     </div>
                     <div class="calendar-controls">
-                        <button id="today-btn" class="today-btn">Today</button>
+                        <button id="today-btn" class="today-btn" aria-label="Go to today">Today</button>
                     </div>
-                    <table class="calendar-table">
+                    <table class="calendar-table" role="grid" aria-label="Event calendar">
                         <tbody id="calendar">
                         </tbody>
                     </table>
-                    <div class="calendar-legend">
-                        <span class="legend-item"><span class="event-dot event"></span> Events</span>
-                        <span class="legend-item"><span class="event-dot meeting"></span> Meetings</span>
-                        <span class="legend-item"><span class="event-dot holiday"></span> Holidays/Closures</span>
+                    <div class="calendar-legend" aria-label="Calendar legend">
+                        <span class="legend-item"><span class="event-dot event" aria-hidden="true"></span> Events</span>
+                        <span class="legend-item"><span class="event-dot meeting" aria-hidden="true"></span> Meetings</span>
+                        <span class="legend-item"><span class="event-dot holiday" aria-hidden="true"></span> Holidays/Closures</span>
                     </div>
                 </div>
             </section>

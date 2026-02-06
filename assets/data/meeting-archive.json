@@ -1,6 +1,14 @@
 {
   "2026": [
     {
+      "date": "2026-02-03",
+      "month": "February",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting",
+      "note": "Draft - pending approval"
+    },
+    {
       "date": "2026-01-06",
       "month": "January",
       "hasMinutes": true,

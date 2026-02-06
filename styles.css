@@ -14,6 +14,99 @@ body {
     background-color: #fff;
 }
 
+/* ========================================
+   ACCESSIBILITY STYLES
+   ======================================== */
+
+/* Skip Link - Hidden but accessible via keyboard */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4a5d23;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 10000;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid #8b4513;
+    outline-offset: 2px;
+}
+
+/* Screen Reader Only - Visually hidden but accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus Styles - Visible focus indicators for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+    outline: 3px solid #8b4513;
+    outline-offset: 2px;
+}
+
+/* Remove outline for mouse users, keep for keyboard */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Enhanced focus for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid #8b4513;
+    outline-offset: 2px;
+}
+
+/* High contrast focus for nav links */
+nav a:focus-visible {
+    outline-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* External Link Indicator - adds visual + screen reader text for links opening in new tabs */
+a[target="_blank"]::after {
+    content: " \2197"; /* ↗ arrow symbol */
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+/* Screen reader text for external links - added via CSS for consistency */
+a[target="_blank"] {
+    position: relative;
+}
+
+/* ========================================
+   END ACCESSIBILITY STYLES
+   ======================================== */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -645,6 +738,7 @@ main {
     margin-bottom: 2rem;
 }
 
+.hero h1,
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -983,6 +1077,13 @@ footer p {
 /* General Styles */
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
+}
+
+/* Page title - h1 styling for main page headings */
+main h1 {
+    color: #4a5d23;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {

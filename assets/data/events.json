@@ -22,7 +22,7 @@
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -42,7 +42,7 @@
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -55,14 +55,27 @@
   },
   {
     "id": 6,
+    "title": "Township Budget Meeting",
+    "date": "2026-03-11", 
+    "time": "6:30 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Annual budget meeting. Public welcome.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
+  },
+  {
+    "id": 26,
     "title": "Township Board Meeting",
-    "date": "2026-03-03", 
+    "date": "2026-03-11", 
     "time": "7:00 PM",
     "type": "meeting",
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -75,7 +88,7 @@
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -95,7 +108,7 @@
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -108,7 +121,7 @@
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -137,7 +150,7 @@
     "location": "Township Hall", 
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
@@ -157,7 +170,7 @@
     "location": "Township Hall",
     "description": "Regular monthly board meeting. Public welcome.",
     "contact": {
-      "name": "Township Secretary",
+      "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
