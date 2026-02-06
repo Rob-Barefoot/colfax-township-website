@@ -369,7 +369,7 @@ header.header-compact ~ .community-submenu {
     margin: 1rem 0;
 }
 
-.payment-column h6 {
+.payment-column h5 {
     color: #4a5d23;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -413,12 +413,14 @@ main section:first-child {
 }
 
 /* Ensure good contrast for content in alternating sections */
+main section:not(.hero) h2,
 main section:not(.hero) h3, 
 main section:not(.hero) h4, 
 main section:not(.hero) h5 {
     color: #4a5d23;
 }
 
+main section:not(.hero):nth-child(even) h2,
 main section:not(.hero):nth-child(even) h3, 
 main section:not(.hero):nth-child(even) h4, 
 main section:not(.hero):nth-child(even) h5 {
@@ -441,7 +443,7 @@ main section:not(.hero):nth-child(even) h5 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.feature h5 {
+.feature h4 {
     margin: 0 0 0.5rem 0;
     color: #4a5d23;
     font-size: 1.1rem;
@@ -478,7 +480,7 @@ main section:not(.hero):nth-child(even) h5 {
     border-left: 4px solid #8b4513;
 }
 
-.service-contact h4 {
+.service-contact h3 {
     margin: 0 0 1rem 0;
     color: #4a5d23;
     font-size: 1.2rem;
@@ -503,15 +505,15 @@ main section:not(.hero):nth-child(even) h5 {
 
 .emergency-notice {
     background: #ffe6e6;
-    border: 2px solid #d32f2f;
+    border: 2px solid #c62828;
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem 0 2rem 0;
     text-align: center;
 }
 
-.emergency-notice h4 {
-    color: #d32f2f;
+.emergency-notice h3 {
+    color: #c62828;
     margin: 0 0 0.5rem 0;
     font-size: 1.3rem;
 }
@@ -545,7 +547,7 @@ main section:not(.hero):nth-child(even) h5 {
     border-left: 4px solid #4a5d23;
 }
 
-.document-section h4 {
+.document-section h3 {
     margin: 0 0 1rem 0;
     color: #4a5d23;
     font-size: 1.2rem;
@@ -628,16 +630,16 @@ main section:not(.hero):nth-child(even) h5 {
 }
 
 .member-info h3 {
-    margin: 0.5rem 0;
-    color: #4a5d23;
-    font-size: 1.4rem;
-}
-
-.member-info h4 {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.25rem 0;
     color: #8b4513;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.member-info h4 {
+    margin: 0.25rem 0 1rem 0;
+    color: #4a5d23;
+    font-size: 1.4rem;
 }
 
 .contact-info {
@@ -685,7 +687,7 @@ footer .contact-info a:hover {
     text-decoration: underline;
 }
 
-.member-bio h5 {
+.member-bio h4 {
     color: #4a5d23;
     margin: 1rem 0 0.5rem 0;
     font-size: 1rem;
@@ -814,7 +816,7 @@ main {
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-.announcement h4 {
+.announcement h3 {
     color: #8b4513;
     margin-bottom: 0.5rem;
 }
@@ -873,7 +875,7 @@ main {
     font-size: 0.9rem;
 }
 
-.event-details h4 {
+.event-details h3 {
     color: #8b4513;
     margin-bottom: 0.5rem;
 }
@@ -1047,7 +1049,7 @@ footer p {
 }
 
 .webmaster-link {
-    color: #c5d4a1;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -1565,7 +1567,7 @@ address .map-link:hover:before {
     background: #3e4f1d;
 }
 
-.archive-year-header h4 {
+.archive-year-header h3 {
     margin: 0;
     display: flex;
     align-items: center;
@@ -2310,7 +2312,7 @@ address .map-link:hover:before {
     padding: 1.5rem;
 }
 
-.tip-card h4 {
+.tip-card h3 {
     color: #4a5d23;
     margin-bottom: 1rem;
 }
@@ -2444,7 +2446,7 @@ address .map-link:hover:before {
     align-items: center;
 }
 
-.archive-item-header h3 {
+.archive-item-header h2 {
     margin: 0;
     font-size: 1.2rem;
     color: white !important;
@@ -2510,7 +2512,7 @@ address .map-link:hover:before {
     padding-top: 1rem;
 }
 
-.archive-gallery h5 {
+.archive-gallery h3 {
     color: #4a5d23;
     margin-bottom: 0.75rem;
     font-size: 1rem;
@@ -2652,7 +2654,7 @@ address .map-link:hover:before {
     align-items: center;
 }
 
-.project-item-header h3 {
+.project-item-header h2 {
     margin: 0;
     font-size: 1.2rem;
     color: white !important;

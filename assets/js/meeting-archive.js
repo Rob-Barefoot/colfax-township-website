@@ -59,7 +59,7 @@ class MeetingArchive {
         const header = document.createElement('div');
         header.className = 'archive-year-header';
         header.innerHTML = `
-            <h4>${year} Meeting Minutes <span class="expand-icon">${isCurrentYear ? '−' : '+'}</span></h4>
+            <h3>${year} Meeting Minutes <span class="expand-icon">${isCurrentYear ? '−' : '+'}</span></h3>
             <span class="meeting-count">(${meetings.length} meetings)</span>
         `;
         

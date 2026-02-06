@@ -171,7 +171,7 @@ class TownshipCalendar {
                     <span class="year">${year}</span>
                 </div>
                 <div class="event-details">
-                    <h4>${event.title}</h4>
+                    <h3>${event.title}</h3>
             `;
             
             if (event.time) {
