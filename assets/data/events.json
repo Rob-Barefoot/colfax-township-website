@@ -299,5 +299,57 @@
       "name": "Feeding America West Michigan",
       "email": "info@feedwm.org"
     }
+  },
+  {
+    "id": 27,
+    "title": "Board of Review Organizational Meeting",
+    "date": "2026-03-03",
+    "time": "10:00 AM - 11:00 AM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Board of Review Organizational Meeting. Public welcome.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
+  },
+  {
+    "id": 28,
+    "title": "Board of Review Meeting",
+    "date": "2026-03-10",
+    "time": "9:00 AM - 3:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Board of Review Meeting. Public welcome.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Board of Review Meeting",
+    "date": "2026-03-12",
+    "time": "3:00 PM - 9:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Board of Review Meeting. Public welcome.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
+  },
+  {
+    "id": 30,
+    "title": "Special Election - West Shore Community College Millage",
+    "date": "2026-05-05",
+    "time": "7:00 AM - 8:00 PM",
+    "type": "event",
+    "location": "Township Hall",
+    "description": "Special Election for West Shore Community College millage. Polls open 7:00 AM to 8:00 PM.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
   }
 ]

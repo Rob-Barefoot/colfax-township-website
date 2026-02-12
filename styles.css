@@ -1894,19 +1894,23 @@ address .map-link:hover:before {
 
 .event-modal-body {
     background: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 0 0 8px 8px;
-    max-width: 500px;
+    max-width: 70vw;
     max-height: 70vh;
     overflow-y: auto;
     width: 90vw;
 }
 
 .modal-event-item {
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
     border-radius: 6px;
     border-left: 4px solid #8b4513;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
 }
 
 .modal-event-item.meeting {
@@ -1929,13 +1933,22 @@ address .map-link:hover:before {
 }
 
 .modal-event-item h4 {
-    margin: 0 0 0.5rem 0;
+    flex: 0 1 100%;
+    margin: 0 0 0.75rem 0;
     color: #4a5d23;
+    font-size: 1.1rem;
+}
+
+.modal-event-item > * {
+    flex: 1 1 auto;
+    min-width: 120px;
 }
 
 .modal-event-item p {
-    margin: 0.25rem 0;
-    line-height: 1.4;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex: 0 1 auto;
 }
 
 .modal-event-item a {
