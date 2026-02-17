@@ -614,6 +614,20 @@ main section:not(.hero):nth-child(even) h5 {
     font-size: 0.9rem;
 }
 
+.info-notice {
+    background: #e7f2ff;
+    border: 1px solid #1e5aa8;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.info-notice p {
+    margin: 0;
+    color: #0b3d91;
+    font-size: 0.9rem;
+}
+
 /* Responsive documents grid */
 @media (max-width: 768px) {
     .documents-grid {
