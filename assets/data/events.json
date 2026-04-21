@@ -351,5 +351,15 @@
       "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
+  },
+  {
+    "id": 31,
+    "title": "Annual Township Trash Collection Day",
+    "date": "2026-05-09",
+    "time": "8:00 AM - 12:00 PM",
+    "type": "event",
+    "location": "Township Hall",
+    "description": "Colfax Township's annual trash collection day. A dumpster will be available at Township Hall.",
+    "url": "documents/other/dumpster-day-naughty-list.pdf"
   }
 ]

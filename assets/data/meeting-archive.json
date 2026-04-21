@@ -1,12 +1,26 @@
 {
   "2026": [
     {
+      "date": "2026-03-11",
+      "month": "March",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2026-03-11",
+      "month": "March",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Annual Budget Meeting",
+      "filename": "3-11-2026-budget-minutes.pdf"
+    },
+    {
       "date": "2026-02-03",
       "month": "February",
       "hasMinutes": true,
       "hasAgenda": false,
-      "title": "Regular Board Meeting",
-      "note": "Draft - pending approval"
+      "title": "Regular Board Meeting"
     },
     {
       "date": "2026-01-06",
