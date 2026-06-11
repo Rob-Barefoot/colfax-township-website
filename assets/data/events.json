@@ -361,5 +361,33 @@
     "location": "Township Hall",
     "description": "Colfax Township's annual trash collection day. A dumpster will be available at Township Hall.",
     "url": "documents/other/dumpster-day-naughty-list.pdf"
+  },
+  {
+    "id": 32,
+    "title": "Colfax Township Flea Market/Garage Sale",
+    "date": "2026-09-04",
+    "time": "TBD",
+    "type": "event",
+    "location": "Colfax Township Hall, 5594 192nd Ave",
+    "description": "Flea market and garage sale to raise funds for civil war veteran grave markers and a Special Projects Fund supporting community initiatives. Contact Clerk Joni Gerard to reserve a vendor table or donate items.",
+    "contact": {
+      "name": "Joni Gerard",
+      "phone": "(231) 301-5685",
+      "email": "jonimgerard@yahoo.com"
+    }
+  },
+  {
+    "id": 33,
+    "title": "Colfax Township Flea Market/Garage Sale",
+    "date": "2026-09-05",
+    "time": "TBD",
+    "type": "event",
+    "location": "Colfax Township Hall, 5594 192nd Ave",
+    "description": "Flea market and garage sale to raise funds for civil war veteran grave markers and a Special Projects Fund supporting community initiatives. Contact Clerk Joni Gerard to reserve a vendor table or donate items.",
+    "contact": {
+      "name": "Joni Gerard",
+      "phone": "(231) 301-5685",
+      "email": "jonimgerard@yahoo.com"
+    }
   }
 ]
