@@ -156,6 +156,19 @@
   },
   {
     "id": 13,
+    "title": "Township Board Meeting",
+    "date": "2026-08-05",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Regular monthly board meeting. Public welcome.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
+  },
+  {
+    "id": 14,
     "title": "Labor Day",
     "date": "2026-09-07",
     "type": "holiday",
