@@ -156,26 +156,35 @@
   },
   {
     "id": 13,
+    "title": "Election Day",
+    "date": "2026-08-04",
+    "time": "7:00 AM – 8:00 PM",
+    "type": "event",
+    "location": "Township Hall",
+    "description": "Election Day voting for Colfax Township residents. Polls open 7:00 AM to 8:00 PM."
+  },
+  {
+    "id": 14,
     "title": "Township Board Meeting",
     "date": "2026-08-05",
     "time": "7:00 PM",
     "type": "meeting",
     "location": "Township Hall",
-    "description": "Regular monthly board meeting. Public welcome.",
+    "description": "Regular monthly board meeting. Moved from August 4th due to Election Day. Public welcome.",
     "contact": {
       "name": "Township Clerk",
       "email": "jonimgerard80@yahoo.com"
     }
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Labor Day",
     "date": "2026-09-07",
     "type": "holiday",
     "description": "Township office closed"
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Township Board Meeting",
     "date": "2026-09-01",
     "time": "7:00 PM",
@@ -188,21 +197,21 @@
     }
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "Thanksgiving Day",
     "date": "2026-11-26",
     "type": "holiday",
     "description": "Township office closed"
   },
   {
-    "id": 16,
+    "id": 17,
     "title": "Christmas Day",
     "date": "2026-12-25",
     "type": "holiday",
     "description": "Township office closed"
   },
   {
-    "id": 17,
+    "id": 18,
     "title": "Mobile Food Pantry - Drive Thru",
     "date": "2026-01-09",
     "time": "4:30 PM",
@@ -216,7 +225,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "Mobile Food Pantry - Walk Up",
     "date": "2026-01-15",
     "time": "5:00 PM", 
