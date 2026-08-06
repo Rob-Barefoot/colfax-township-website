@@ -177,6 +177,16 @@
     }
   },
   {
+    "id": 34,
+    "title": "Oceana County Household Hazardous Waste Collection Day",
+    "date": "2026-08-15",
+    "time": "9:00 AM - 1:00 PM",
+    "type": "event",
+    "location": "Hart Department of Public Works, 1010 S. State St., Hart, MI 49420",
+    "description": "Oceana County's annual household hazardous waste collection day.",
+    "url": "https://oceana.mi.us/departments/transfer-station-recycling-center/"
+  },
+  {
     "id": 15,
     "title": "Labor Day",
     "date": "2026-09-07",
