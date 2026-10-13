@@ -129,31 +129,29 @@ a[href$=".pdf"][target="_blank"]::after {
 
 /* Header Styles */
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     background-color: #4a5d23;
     color: white;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     z-index: 1000;
     transition: all 0.3s ease;
-    height: 220px;
+    height: 112px;
 }
 
 /* Header states during scroll */
 header.header-scrolled {
     padding: 0.5rem 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    height: 60px;
+    height: 64px;
 }
 
 header.header-compact {
     padding: 0.3rem 0;
     background-color: rgba(74, 93, 35, 0.95);
     backdrop-filter: blur(10px);
-    height: 45px;
+    height: 52px;
 }
 
 header .container {
@@ -163,6 +161,7 @@ header .container {
     flex-wrap: wrap;
     gap: 2rem;
     position: relative;
+    height: 100%;
 }
 
 header nav {
@@ -173,9 +172,9 @@ header nav {
 }
 
 .logo {
-    height: 180px;
+    height: 88px;
     width: auto;
-    max-width: 180px;
+    max-width: 88px;
     background: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 8px;
@@ -185,8 +184,8 @@ header nav {
 
 /* Logo scroll states */
 header.header-scrolled .logo {
-    height: 40px;
-    max-width: 40px;
+    height: 44px;
+    max-width: 44px;
 }
 
 header.header-compact .logo {
@@ -195,10 +194,26 @@ header.header-compact .logo {
     pointer-events: none;
 }
 
-/* Hide logo on narrow screens to prevent menu overlap */
-@media (max-width: 1150px) {
+/* Keep the navigation centered when there is not enough room for the logo */
+@media (max-width: 950px) {
     .logo {
-        visibility: hidden;
+        display: none;
+    }
+
+    header {
+        height: 76px;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem 0.75rem;
     }
 }
 
@@ -230,21 +245,19 @@ nav a.active {
     background-color: #8b4513;
     border-bottom: 2px solid #654321;
     padding: 0.5rem 0;
-    position: fixed;
-    top: 220px;
-    left: 0;
-    right: 0;
+    position: sticky;
+    top: 112px;
     z-index: 999;
     transition: top 0.3s ease;
 }
 
 /* Adjust submenu position when header is scrolled */
 header.header-scrolled ~ .services-submenu {
-    top: 60px;
+    top: 64px;
 }
 
 header.header-compact ~ .services-submenu {
-    top: 45px;
+    top: 52px;
 }
 
 .services-submenu .container {
@@ -282,21 +295,19 @@ header.header-compact ~ .services-submenu {
     background-color: #8b4513;
     border-bottom: 2px solid #654321;
     padding: 0.5rem 0;
-    position: fixed;
-    top: 220px;
-    left: 0;
-    right: 0;
+    position: sticky;
+    top: 112px;
     z-index: 999;
     transition: top 0.3s ease;
 }
 
 /* Adjust submenu position when header is scrolled */
 header.header-scrolled ~ .community-submenu {
-    top: 60px;
+    top: 64px;
 }
 
 header.header-compact ~ .community-submenu {
-    top: 45px;
+    top: 52px;
 }
 
 .community-submenu .container {
@@ -331,12 +342,12 @@ header.header-compact ~ .community-submenu {
 
 /* Adjust main content margin for services pages with submenu */
 .services-page main {
-    margin-top: 270px; /* Account for both header and submenu */
+    margin-top: 0;
 }
 
 /* Adjust main content margin for community pages with submenu */
 .community-page main {
-    margin-top: 270px; /* Account for both header and submenu */
+    margin-top: 0;
 }
 
 /* Button Styles */
@@ -756,7 +767,7 @@ footer .contact-info a:hover {
 main {
     min-height: 60vh;
     padding: 2rem 0;
-    margin-top: 220px; /* Account for fixed header height */
+    margin-top: 0;
 }
 
 /* Hero Section */
@@ -2011,19 +2022,44 @@ address .map-link:hover:before {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    main {
-        margin-top: 200px; /* Smaller margin for mobile header */
+    header,
+    header.header-scrolled,
+    header.header-compact {
+        position: relative;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .services-submenu,
+    .community-submenu,
+    header.header-scrolled ~ .services-submenu,
+    header.header-compact ~ .services-submenu,
+    header.header-scrolled ~ .community-submenu,
+    header.header-compact ~ .community-submenu {
+        top: 0;
+    }
+
+    .services-submenu .container,
+    .community-submenu .container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .services-submenu ul,
+    .community-submenu ul {
+        flex: 0 0 max-content;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 0.25rem;
+        width: max-content;
     }
     
     header .container {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
-    }
-    
-    .logo {
-        height: 50px;
-        max-width: 50px;
+        gap: 0;
     }
     
     nav ul {

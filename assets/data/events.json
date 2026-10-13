@@ -207,6 +207,19 @@
     }
   },
   {
+    "id": 35,
+    "title": "Truth in Taxation Hearing and Township Board Meeting",
+    "date": "2026-11-04",
+    "time": "7:00 PM",
+    "type": "meeting",
+    "location": "Township Hall",
+    "description": "Truth in Taxation hearing, immediately followed by the regular Township Board meeting. Public welcome.",
+    "contact": {
+      "name": "Township Clerk",
+      "email": "jonimgerard80@yahoo.com"
+    }
+  },
+  {
     "id": 16,
     "title": "Thanksgiving Day",
     "date": "2026-11-26",

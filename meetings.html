@@ -35,9 +35,17 @@
                     const nextMeetingDiv = document.querySelector('.next-meeting-simple');
                     if (nextMeetingDiv) {
                         nextMeetingDiv.innerHTML = `
-                            <h4>${formattedDate}</h4>
+                            <h3>${formattedDate}</h3>
                             <p>${nextMeeting.time} - ${nextMeeting.description}</p>
                             <p>View all meetings and details on our <a href="community/events.html">events calendar</a>.</p>
+                        `;
+                    }
+                } else {
+                    const nextMeetingDiv = document.querySelector('.next-meeting-simple');
+                    if (nextMeetingDiv) {
+                        nextMeetingDiv.innerHTML = `
+                            <p>The next meeting date has not been posted.</p>
+                            <p>Check the <a href="community/events.html">events calendar</a> for schedule updates.</p>
                         `;
                     }
                 }
@@ -77,8 +85,8 @@
                 <h2>Next Meeting</h2>
                 
                 <div class="next-meeting-simple">
-                    <h3>February 3, 2026</h3>
-                    <p>7:00 PM - Regular Board Meeting</p>
+                    <h3>Wednesday, November 4, 2026</h3>
+                    <p>7:00 PM - Truth in Taxation hearing, immediately followed by the regular Township Board meeting. Public welcome.</p>
                     <p>View all meetings and details on our <a href="community/events.html">events calendar</a>.</p>
                 </div>
             </section>

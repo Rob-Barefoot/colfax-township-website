@@ -1,6 +1,27 @@
 {
   "2026": [
     {
+      "date": "2026-10-06",
+      "month": "October",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2026-09-01",
+      "month": "September",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
+      "date": "2026-08-05",
+      "month": "August",
+      "hasMinutes": true,
+      "hasAgenda": false,
+      "title": "Regular Board Meeting"
+    },
+    {
       "date": "2026-07-07",
       "month": "July",
       "hasMinutes": true,
